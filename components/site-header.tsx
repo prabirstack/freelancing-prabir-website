@@ -3,6 +3,7 @@ import Link from 'next/link'
 import { buttonVariants } from '@/components/ui/button'
 import { MainNav } from '@/components/main-nav'
 import { MobileNav } from './mobile-nav'
+import { ModeToggle } from './mode-toggle'
 
 export function SiteHeader() {
   return (
@@ -21,10 +22,10 @@ export function SiteHeader() {
                 Get in Touch
               </div>
             </Link>
+            <ModeToggle />
             <MobileNav />
           </nav>
         </div>
-        
       </div>
     </header>
   )

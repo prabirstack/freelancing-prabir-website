@@ -2,6 +2,7 @@ import { cn } from '@/lib/utils'
 import Link from 'next/link'
 import { buttonVariants } from '@/components/ui/button'
 import { MainNav } from '@/components/main-nav'
+import { MobileNav } from './mobile-nav'
 
 export function SiteHeader() {
   return (
@@ -14,14 +15,16 @@ export function SiteHeader() {
               <div
                 className={cn(
                   buttonVariants({ variant: 'default' }),
-                  'capitalize'
+                  'hidden sm:inline-flex'
                 )}
               >
-                contact
+                Get in Touch
               </div>
             </Link>
+            <MobileNav />
           </nav>
         </div>
+        
       </div>
     </header>
   )

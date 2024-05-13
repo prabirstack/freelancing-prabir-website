@@ -25,12 +25,21 @@ export default async function AboutPage() {
             Freelance Developer
           </p>
         </div>
-        <p className='text-muted-foreground text-lg py-4'>
-          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Provident
-          maxime illo laboriosam minus rem dolores sequi consequatur maiores
-          repudiandae culpa, aliquid natus cum esse molestias. Magnam earum
-          velit officiis illum?
-        </p>
+        <div className='flex flex-col gap-4'>
+          <p className='text-muted-foreground text-lg pt-4'>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Provident
+            maxime illo laboriosam minus rem dolores sequi consequatur maiores
+            repudiandae culpa, aliquid natus cum esse molestias. Magnam earum
+            velit officiis illum?
+          </p>
+          <p className='text-muted-foreground text-lg py-2'>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repellat
+            sunt, iure optio facere porro minima officia quis ratione. Id iste
+            minima delectus repellendus quas, tempora reiciendis accusantium
+            iusto corporis aut dignissimos aperiam doloribus accusamus
+            voluptatibus maxime praesentium error doloremque a?
+          </p>
+        </div>
       </div>
     </div>
   )

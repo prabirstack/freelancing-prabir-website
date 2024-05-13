@@ -3,6 +3,7 @@ import { MDXContent } from '@/components/mdx-component'
 import { Separator } from '@/components/ui/separator'
 import { notFound } from 'next/navigation'
 
+import '@/styles/mdx.css'
 interface PostPageProps {
   params: {
     slug: string[]

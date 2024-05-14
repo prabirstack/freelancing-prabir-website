@@ -16,7 +16,7 @@ export function SiteHeader() {
               <div
                 className={cn(
                   buttonVariants({ variant: 'default' }),
-                  'hidden sm:inline-flex'
+                  'hidden sm:inline-flex mr-2'
                 )}
               >
                 Get in Touch

@@ -1,5 +1,11 @@
 import { Avatar, AvatarFallback, AvatarImage } from '@/components/ui/avatar'
 import { siteConfig } from '@/config/site'
+import { Metadata } from 'next'
+
+export const metadata: Metadata = {
+  title: 'About Me',
+  description: 'Information about me',
+}
 
 export default async function AboutPage() {
   return (
@@ -31,6 +37,13 @@ export default async function AboutPage() {
             maxime illo laboriosam minus rem dolores sequi consequatur maiores
             repudiandae culpa, aliquid natus cum esse molestias. Magnam earum
             velit officiis illum?
+          </p>
+          <p className='text-muted-foreground text-lg py-2'>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repellat
+            sunt, iure optio facere porro minima officia quis ratione. Id iste
+            minima delectus repellendus quas, tempora reiciendis accusantium
+            iusto corporis aut dignissimos aperiam doloribus accusamus
+            voluptatibus maxime praesentium error doloremque a?
           </p>
           <p className='text-muted-foreground text-lg py-2'>
             Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repellat

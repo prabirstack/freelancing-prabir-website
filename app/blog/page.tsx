@@ -3,7 +3,12 @@ import { PostItem } from '@/components/post-item'
 import { QueryPagination } from '@/components/query-pagination'
 import { Separator } from '@/components/ui/separator'
 import { sortPosts } from '@/lib/utils'
+import { Metadata } from 'next'
 
+export const metadat: Metadata = {
+  title: 'My blog',
+  description: "This is a description"
+}
 const POSTS_PER_PAGE = 5
 
 interface BlogPageProps {

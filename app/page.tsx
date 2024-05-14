@@ -5,6 +5,8 @@ import { posts } from '#site/content'
 import Image from 'next/image'
 import Link from 'next/link'
 import { PostItem } from '@/components/post-item'
+import { Avatar, AvatarFallback, AvatarImage } from '@/components/ui/avatar'
+import { siteConfig } from '@/config/site'
 
 export default function Home() {
   const latestPosts = sortPosts(posts).slice(0, 5)
@@ -34,13 +36,10 @@ export default function Home() {
               </Link>
             </div>
           </div>
-          {/* <Image
-          src='/static/profile-pic.webp'
-          alt=''
-          width={200}
-          height={200}
-          className='rounded-full object-cover items-end'
-        /> */}
+          {/* <Avatar className='h-48 w-48'>
+            <AvatarImage src='/avatar.jpg' alt={siteConfig.author} />
+            <AvatarFallback>PS</AvatarFallback>
+          </Avatar> */}
           <div className='flex gap-4'>
             <span className='relative flex h-3 w-3 mt-1'>
               <span className='animate-ping absolute inline-flex h-full w-full rounded-full bg-green-400 opacity-75'></span>
